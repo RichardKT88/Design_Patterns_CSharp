@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{218ECAF7-DF9B-41F6-9769-2E98331EDEF3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPattens2</RootNamespace>
+    <AssemblyName>DesignPattens2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capitulo01\ConnectionFactory.cs" />
+    <Compile Include="Capitulo02\Do.cs" />
+    <Compile Include="Capitulo02\Fa.cs" />
+    <Compile Include="Capitulo02\INota.cs" />
+    <Compile Include="Capitulo02\La.cs" />
+    <Compile Include="Capitulo02\Mi.cs" />
+    <Compile Include="Capitulo02\NotasMusicais.cs" />
+    <Compile Include="Capitulo02\Piano.cs" />
+    <Compile Include="Capitulo02\Re.cs" />
+    <Compile Include="Capitulo02\Si.cs" />
+    <Compile Include="Capitulo02\Sol.cs" />
+    <Compile Include="Capitulo03\Contrato.cs" />
+    <Compile Include="Capitulo03\Estado.cs" />
+    <Compile Include="Capitulo03\Historico.cs" />
+    <Compile Include="Capitulo03\TipoContrato.cs" />
+    <Compile Include="Capitulo04\Divisao.cs" />
+    <Compile Include="Capitulo04\IExpressao.cs" />
+    <Compile Include="Capitulo04\Multiplicacao.cs" />
+    <Compile Include="Capitulo04\Numero.cs" />
+    <Compile Include="Capitulo04\RaizQuadrada.cs" />
+    <Compile Include="Capitulo04\Soma.cs" />
+    <Compile Include="Capitulo04\Subtracao.cs" />
+    <Compile Include="Capitulo05\ImpressoraPreFixa.cs" />
+    <Compile Include="Capitulo05\ImpressoraVisitor.cs" />
+    <Compile Include="Capitulo05\IVisitor.cs" />
+    <Compile Include="Capitulo06\EnviaPorEmail.cs" />
+    <Compile Include="Capitulo06\EnviaPorSMS.cs" />
+    <Compile Include="Capitulo06\IEnviador.cs" />
+    <Compile Include="Capitulo06\IMensagem.cs" />
+    <Compile Include="Capitulo06\MensagemCliente.cs" />
+    <Compile Include="Capitulo06\MensagemAdministrativa.cs" />
+    <Compile Include="Capitulo07\FilaDeTrabalho.cs" />
+    <Compile Include="Capitulo07\FinalizaPedido.cs" />
+    <Compile Include="Capitulo07\IComando.cs" />
+    <Compile Include="Capitulo07\PagaPedido.cs" />
+    <Compile Include="Capitulo07\Status.cs" />
+    <Compile Include="Capitulo07\Pedido.cs" />
+    <Compile Include="Capitulo08\Cliente.cs" />
+    <Compile Include="Capitulo08\GeradorDeXml.cs" />
+    <Compile Include="Capitulo09\EmpresaFacade.cs" />
+    <Compile Include="Capitulo09\EmpresaFacadeSingleton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

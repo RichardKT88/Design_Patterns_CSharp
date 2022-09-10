@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D1EA721-CECA-4D7E-8B69-DD7A0EB8C27B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CursoDesignPatterns</RootNamespace>
+    <AssemblyName>CursoDesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cap7_Observer\AcaoAposGerarNota.cs" />
+    <Compile Include="Cap5_State\Aprovado.cs" />
+    <Compile Include="Cap1_Strategy\Arrojado.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\CalculadorDeDescontos.cs" />
+    <Compile Include="Cap1_Strategy\CalculadorDeImpostos.cs" />
+    <Compile Include="Cap1_Strategy\Conservador.cs" />
+    <Compile Include="Cap1_Strategy\Conta.cs" />
+    <Compile Include="Cap1_Strategy\Program.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\Conta.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\Orcamento.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\Program.cs" />
+    <Compile Include="Cap3_Template_Method\Program.cs" />
+    <Compile Include="Cap3_Template_Method\Resposta.cs" />
+    <Compile Include="Cap4_Decorator\Conta.cs" />
+    <Compile Include="Cap4_Decorator\ICCC.cs" />
+    <Compile Include="Cap4_Decorator\ICMS.cs" />
+    <Compile Include="Cap4_Decorator\ICPP.cs" />
+    <Compile Include="Cap4_Decorator\IHIT.cs" />
+    <Compile Include="Cap4_Decorator\IKCV.cs" />
+    <Compile Include="Cap4_Decorator\Imposto.cs" />
+    <Compile Include="Cap4_Decorator\ISS.cs" />
+    <Compile Include="Cap4_Decorator\Program.cs" />
+    <Compile Include="Cap4_Decorator\TemplateDeImpostoCondicional.cs" />
+    <Compile Include="Cap5_State\Orcamento.cs" />
+    <Compile Include="Cap5_State\Program.cs" />
+    <Compile Include="Cap6_Builder\Program.cs" />
+    <Compile Include="Cap7_Observer\NotaFiscalBuilder.cs" />
+    <Compile Include="Cap7_Observer\Program.cs" />
+    <Compile Include="Cap7_Observer\EnviadorDeEmail.cs" />
+    <Compile Include="Cap7_Observer\EnviadorDeSMS.cs" />
+    <Compile Include="Cap7_Observer\Multiplicador.cs" />
+    <Compile Include="Cap6_Builder\NotaFiscalBuilder.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\Desconto.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\DescontoPorMaisDeQuinhentosReais.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\DescontoPorCincoItens.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\DescontoPorVendaCasada.cs" />
+    <Compile Include="Cap5_State\EmAprovacao.cs" />
+    <Compile Include="Cap5_State\EstadoDeUmaConta.cs" />
+    <Compile Include="Cap5_State\EstadoDeUmOrcamento.cs" />
+    <Compile Include="Cap1_Strategy\EstrategiaDeInvestimento.cs" />
+    <Compile Include="Cap4_Decorator\Filtro.cs" />
+    <Compile Include="Cap4_Decorator\FiltroDataDeAberturaMesCorrente.cs" />
+    <Compile Include="Cap4_Decorator\FiltroSaldoMaior500.cs" />
+    <Compile Include="Cap4_Decorator\FiltroSaldoMenor100.cs" />
+    <Compile Include="Cap5_State\Finalizado.cs" />
+    <Compile Include="Cap3_Template_Method\ICPP.cs" />
+    <Compile Include="Cap3_Template_Method\IHIT.cs" />
+    <Compile Include="Cap3_Template_Method\IKCV.cs" />
+    <Compile Include="Cap4_Decorator\ImpostoMuitoAlto.cs" />
+    <Compile Include="Cap6_Builder\ItemDaNota.cs" />
+    <Compile Include="Cap5_State\Negativo.cs" />
+    <Compile Include="Cap6_Builder\NotaFiscal.cs" />
+    <Compile Include="Cap7_Observer\NotaFiscalDAO.cs" />
+    <Compile Include="Cap5_State\Positivo.cs" />
+    <Compile Include="Cap3_Template_Method\RelatorioComplexos.cs" />
+    <Compile Include="Cap3_Template_Method\RelatorioSimples.cs" />
+    <Compile Include="Cap5_State\Reprovado.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\RespostaEmCsv.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\RespostaEmPorcento.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\Resposta.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\RespostaXML.cs" />
+    <Compile Include="Cap1_Strategy\ICCC.cs" />
+    <Compile Include="Cap1_Strategy\ICMS.cs" />
+    <Compile Include="Cap1_Strategy\Imposto.cs" />
+    <Compile Include="Cap1_Strategy\ISS.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\Item.cs" />
+    <Compile Include="Cap1_Strategy\Moderado.cs" />
+    <Compile Include="Cap1_Strategy\Orcamento.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Cap1_Strategy\RealizadorDeInvestimentos.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\Requisição.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\SemDesconto.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\SemFormato.cs" />
+    <Compile Include="Cap3_Template_Method\TemplateDeImpostoCondicional.cs" />
+    <Compile Include="Cap3_Template_Method\TemplateRelatorio.cs" />
+    <Compile Include="Cap2_Chain_Of_Responsability\TestaCorrente.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
